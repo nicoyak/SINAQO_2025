@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Visor de Espacios Químicos</title>
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 40px auto; 
+            max-width: 800px;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+        }
+        h1 { 
+            color: #1a1a1a;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        ul { 
+            list-style-type: none; 
+            padding: 0; 
+        }
+        li { 
+            margin: 15px 0; 
+        }
+        a { 
+            text-decoration: none; 
+            font-size: 1.2em; 
+            color: #007AFF; /* Un color azul bonito */
+            background-color: #ffffff;
+            padding: 12px 18px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            display: block; /* Hace que el botón ocupe todo el ancho */
+            transition: transform 0.2s, box-shadow 0.2s; /* Pequeña animación */
+        }
+        a:hover {
+            transform: translateY(-2px); /* Eleva el botón al pasar el mouse */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* Sombra suave */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Visor de Espacios Químicos 3D</h1>
+    <p>Selecciona el gráfico que deseas ver (se abrirá en una pestaña nueva):</p>
+
+    <ul>
+        <li><a href="FDA_SPACE/FDA_Cluster_ECFP.html" target="_blank">Gráfico 1: Cluster ECFP</a></li>
+        <li><a href="FDA_SPACE/FDA_Cluster_FCFP.html" target="_blank">Gráfico 2: Cluster FCFP</a></li>
+        <li><a href="FDA_SPACE/FDA_Organismos_ECFP.html" target="_blank">Gráfico 3: Organismos ECFP</a></li>
+        <li><a href="FDA_SPACE/FDA_Organismos_FCFP.html" target="_blank">Gráfico 4: Organismos FCFP</a></li>
+    </ul>
+
+</body>
+</html>
