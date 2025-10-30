@@ -16,29 +16,38 @@
             color: #333;
         }
 
-        /* Contenedor principal - MARGEN SUPERIOR REDUCIDO */
+        /* Banner del título - NUEVA SECCIÓN */
+        .header-banner {
+            background-color: #556B2F; /* El verde olivo oscuro */
+            color: #ffffff; /* Letras blancas */
+            text-align: center;
+            padding: 20px 15px; /* Padding para el título */
+        }
+        .header-banner h1 {
+            color: #ffffff; /* Título blanco */
+            margin: 0; /* Eliminar margen superior/inferior del h1 */
+            font-size: 2em;
+            border-bottom: none; /* No queremos línea divisoria en el banner */
+            padding-bottom: 0;
+        }
+
+        /* Contenedor principal (la caja blanca de los botones) */
         .container {
             width: 90%;
             max-width: 800px; /* Ancho máximo en PC */
-            margin: 10px auto 20px auto; /* 10px arriba, auto lados, 20px abajo */
+            margin: 20px auto; /* Centrado automático, 20px arriba/abajo */
             padding: 20px;
             background-color: #ffffff;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
 
-        /* Título - CENTRADO Y CON COLOR VERDE */
-        h1 { 
-            color: #556B2F; /* Verde olivo oscuro (militar) */
-            text-align: center; /* Título centrado */
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-            font-size: 2em; 
-        }
-        
+        /* Párrafo introductorio - MÁS COMPACTO */
         p {
-            font-size: 1.1em;
-            line-height: 1.6;
+            font-size: 0.95em; /* Ligeramente más pequeño */
+            line-height: 1.4; /* Menos espacio entre líneas */
+            margin-top: 0; /* Sin margen superior extra */
+            margin-bottom: 20px; /* Espacio para separar de los botones */
         }
 
         /* Estilos para la lista de enlaces */
@@ -96,39 +105,41 @@
         }
         .logo-container {
             display: flex;
-            flex-wrap: wrap; /* Esta es la clave para que se reordenen en celulares */
-            justify-content: center; /* Centra los logos */
+            flex-wrap: wrap; 
+            justify-content: center; 
             align-items: center;
-            gap: 25px; /* Espacio entre logos */
+            gap: 25px; 
         }
         
         /* Estilo que pediste para cada logo */
         .logo-img {
-            height: 60px; /* Altura fija para unificarlos */
-            width: auto; /* Ancho automático para mantener proporción */
-            max-width: 150px; /* Evita que un logo sea gigante */
+            height: 60px; 
+            width: auto; 
+            max-width: 150px; 
             
-            /* Tu estilo solicitado */
             background-color: white;
             border: 1px solid black;
-            border-radius: 8px; /* Bordes redondeados */
-            padding: 10px; /* Espacio interno para que el logo "respire" */
-            box-sizing: border-box; /* El padding y borde no afectan la altura total */
+            border-radius: 8px; 
+            padding: 10px; 
+            box-sizing: border-box; 
         }
 
     </style>
 </head>
 <body>
 
-    <div class="container">
+    <div class="header-banner">
         <h1>Visor de Espacios Químicos 3D</h1>
-        <p>Selecciona el gráfico que deseas ver. Los gráficos se abrirán en una pestaña nueva.</p>
+    </div>
+
+    <div class="container">
+        <p>Selecciona el gráfico que deseas ver. Los gráficos se abrirán en una pestaña nueva:</p>
     
         <ul>
-            <li><a href="Mapas_Space_Chemical/ECFP_Cluster.html" target="_blank" class="button-link">Gráfico 1: ECFP Cluster</a></li>
-            <li><a href="Mapas_Space_Chemical/FCFP_Cluster.html" target="_blank" class="button-link">Gráfico 2: FCFP Cluster</a></li>
-            <li><a href="Mapas_Space_Chemical/ECFP_Organismos.html" target="_blank" class="button-link">Gráfico 3: ECFP Organismos</a></li>
-            <li><a href="Mapas_Space_Chemical/FCFP_Organismos.html" target="_blank" class="button-link">Gráfico 4: FCFP Organismos</a></li>
+            <li><a href="Mapas_Space_Chemical/ECFP_Cluster.html" target="_blank" class="button-link">🔬 Gráfico 1: ECFP Cluster</a></li>
+            <li><a href="Mapas_Space_Chemical/FCFP_Cluster.html" target="_blank" class="button-link">🔬 Gráfico 2: FCFP Cluster</a></li>
+            <li><a href="Mapas_Space_Chemical/ECFP_Organismos.html" target="_blank" class="button-link">🧬 Gráfico 3: ECFP Organismos</a></li>
+            <li><a href="Mapas_Space_Chemical/FCFP_Organismos.html" target="_blank" class="button-link">🧬 Gráfico 4: FCFP Organismos</a></li>
         </ul>
         
         <hr>
