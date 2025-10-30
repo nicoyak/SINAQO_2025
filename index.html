@@ -19,46 +19,49 @@
             min-height: 100vh;
         }
 
-        /* Contenedor principal que se centra y se adapta */
+        /* Contenedor principal - MÁS COMPACTO */
         .container {
             width: 90%;
             max-width: 800px; /* Ancho máximo en PC */
-            margin: 20px auto; /* Centrado automático */
-            padding: 20px;
+            margin: 10px auto; /* Reducido de 20px */
+            padding: 15px; /* Reducido de 20px */
             background-color: #ffffff;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            flex-grow: 1; /* Hace que el contenido empuje el pie de página hacia abajo */
+            flex-grow: 1; /* Hace que el contenido empuje el pie de página */
         }
 
         h1 { 
             color: #1a1a1a;
             border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-            font-size: 2em; /* Tamaño de letra adaptable */
+            padding-bottom: 8px; /* Reducido de 10px */
+            font-size: 1.8em; /* Reducido de 2em */
+            margin-top: 0; /* Aseguramos no haya margen extra */
         }
         
         p {
-            font-size: 1.1em;
-            line-height: 1.6;
+            font-size: 1em; /* Reducido de 1.1em */
+            line-height: 1.5; /* Reducido de 1.6 */
+            margin-bottom: 15px; /* Espacio controlado */
         }
 
-        /* Estilos para la lista de enlaces */
+        /* Estilos para la lista - MÁS COMPACTA */
         ul { 
             list-style-type: none; 
             padding: 0; 
+            margin: 0; /* Aseguramos no haya margen extra */
         }
         li { 
-            margin: 15px 0; 
+            margin: 10px 0; /* Reducido de 15px */
         }
 
-        /* Estilo de los botones (enlaces) */
+        /* Estilo de los botones - MÁS COMPACTO */
         .button-link { 
             text-decoration: none; 
-            font-size: 1.2em; 
+            font-size: 1.1em; /* Reducido de 1.2em */
             color: #007AFF; 
             background-color: #ffffff;
-            padding: 14px 20px;
+            padding: 12px 18px; /* Reducido de 14px 20px */
             border-radius: 8px;
             border: 1px solid #ddd;
             display: block; /* Ocupa todo el ancho */
@@ -81,10 +84,17 @@
             background-color: #2fb150;
         }
 
-        /* Pie de página para los logos */
+        /* Línea divisoria - MÁS COMPACTA */
+        hr {
+            border: none; 
+            border-top: 1px solid #eee; 
+            margin: 20px 0; /* Reducido de 30px */
+        }
+
+        /* Pie de página para los logos - MÁS COMPACTO */
         footer {
             text-align: center;
-            padding: 30px 10px;
+            padding: 20px 10px; /* Reducido de 30px */
             background-color: #f1f1f1;
             border-top: 1px solid #ddd;
             width: 100%;
@@ -94,20 +104,20 @@
             flex-wrap: wrap; /* Esta es la clave para que se reordenen en celulares */
             justify-content: center; /* Centra los logos */
             align-items: center;
-            gap: 25px; /* Espacio entre logos */
+            gap: 20px; /* Reducido de 25px */
         }
         
-        /* Estilo que pediste para cada logo */
+        /* Estilo que pediste para cada logo - MÁS COMPACTO */
         .logo-img {
-            height: 60px; /* Altura fija para unificarlos */
+            height: 50px; /* Reducido de 60px */
             width: auto; /* Ancho automático para mantener proporción */
-            max-width: 150px; /* Evita que un logo sea gigante */
+            max-width: 130px; /* Reducido de 150px */
             
             /* Tu estilo solicitado */
             background-color: white;
             border: 1px solid black;
             border-radius: 8px; /* Bordes redondeados */
-            padding: 10px; /* Espacio interno para que el logo "respire" */
+            padding: 8px; /* Reducido de 10px */
             box-sizing: border-box; /* El padding y borde no afectan la altura total */
         }
 
@@ -126,7 +136,7 @@
             <li><a href="Mapas_Space_Chemical/FCFP_Organismos.html" target="_blank" class="button-link">Gráfico 4: FCFP Organismos</a></li>
         </ul>
         
-        <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+        <hr>
 
         <ul>
             <li>
