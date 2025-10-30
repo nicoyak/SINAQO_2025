@@ -14,25 +14,23 @@
             padding: 0;
             background-color: #f9f9f9;
             color: #333;
-            /* display: flex;         <- ELIMINADO */
-            /* flex-direction: column; <- ELIMINADO */
-            /* min-height: 100vh;     <- ELIMINADO */
         }
 
-        /* Contenedor principal (vuelto a su tamaño original) */
+        /* Contenedor principal - MARGEN SUPERIOR REDUCIDO */
         .container {
             width: 90%;
             max-width: 800px; /* Ancho máximo en PC */
-            margin: 20px auto; /* Centrado automático */
+            margin: 10px auto 20px auto; /* 10px arriba, auto lados, 20px abajo */
             padding: 20px;
             background-color: #ffffff;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            /* flex-grow: 1;          <- ELIMINADO */
         }
 
+        /* Título - CENTRADO Y CON COLOR VERDE */
         h1 { 
-            color: #1a1a1a;
+            color: #556B2F; /* Verde olivo oscuro (militar) */
+            text-align: center; /* Título centrado */
             border-bottom: 2px solid #eee;
             padding-bottom: 10px;
             font-size: 2em; 
@@ -43,7 +41,7 @@
             line-height: 1.6;
         }
 
-        /* Estilos para la lista de enlaces (vuelto a su tamaño original) */
+        /* Estilos para la lista de enlaces */
         ul { 
             list-style-type: none; 
             padding: 0; 
@@ -52,7 +50,7 @@
             margin: 15px 0; 
         }
 
-        /* Estilo de los botones (vuelto a su tamaño original) */
+        /* Estilo de los botones */
         .button-link { 
             text-decoration: none; 
             font-size: 1.2em; 
@@ -81,14 +79,14 @@
             background-color: #2fb150;
         }
 
-        /* Línea divisoria (vuelto a su tamaño original) */
+        /* Línea divisoria */
         hr {
             border: none; 
             border-top: 1px solid #eee; 
             margin: 30px 0; 
         }
 
-        /* Pie de página para los logos (vuelto a su tamaño original) */
+        /* Pie de página para los logos */
         footer {
             text-align: center;
             padding: 30px 10px;
@@ -104,7 +102,7 @@
             gap: 25px; /* Espacio entre logos */
         }
         
-        /* Estilo que pediste para cada logo (vuelto a su tamaño original) */
+        /* Estilo que pediste para cada logo */
         .logo-img {
             height: 60px; /* Altura fija para unificarlos */
             width: auto; /* Ancho automático para mantener proporción */
